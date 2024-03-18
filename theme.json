@@ -1,0 +1,102 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 2,
+  "settings": {
+    "layout": {
+      "contentSize": "1183px",
+      "wideSize": "1183px"
+    },
+    "color": {
+      "palette": [
+        {
+          "slug": "twiske-black",
+          "color": "#050505",
+          "name": "Twiske Black"
+        },
+        {
+          "slug": "twiske-yellow",
+          "color": "#ffce00",
+          "name": "Twiske Yellow"
+        },
+        {
+          "slug": "twiske-grey",
+          "color": "#333333",
+          "name": "Twiske Gray"
+        },
+        {
+          "slug": "twiske-charcoal",
+          "color": "#5a5a5a",
+          "name": "Twiske Charcoal"
+        },
+        {
+          "slug": "twiske-white",
+          "color": "#f5f5f5",
+          "name": "Twiske White"
+        }
+      ]
+    },
+    "typography": {
+      "fontFamilies": [
+        {
+          "fontFamily": "'Inter', sans-serif",
+          "slug": "inter",
+          "name": "Body - Inter",
+          "fontFace": [
+            {
+              "fontFamily": "'Inter', sans-serif",
+              "fontWeight": "400",
+              "fontStyle": "normal",
+              "src": ["file:./assets/fonts/Inter/Inter-Regular.ttf"]
+            },
+            {
+              "fontFamily": "'Inter', sans-serif",
+              "fontWeight": "700",
+              "fontStyle": "bold",
+              "src": ["file:./assets/fonts/Inter/Inter-Bold.ttf"]
+            }
+          ]
+        },
+        {
+          "fontFamily": "'Chivo', sans-serif",
+          "slug": "chivo",
+          "name": "Heading - Chivo",
+          "fontFace": [
+            {
+              "fontFamily": "'Chivo', sans-serif",
+              "fontWeight": "700",
+              "fontStyle": "bold",
+              "src": ["file:./assets/fonts/Chivo/Chivo-Bold.ttf"]
+            }
+          ]
+        }
+      ]
+    },
+    "custom": {
+      "typography": {
+        "font-size": {
+          "heading-1": "52px"
+        }
+      }
+    }
+  },
+  "styles": {
+    "typography": {
+      "fontFamily": "var(--wp--preset--font-family--inter)",
+      "lineHeight": "1.75",
+      "fontSize": "1 rem"
+    },
+    "elements": {
+      "h1": {
+        "typography": {
+          "fontFamily": "var(--wp--preset--font-family--chivo)",
+          "fontWeight": "700",
+          "lineHeight": "1.3",
+          "fontSize": "var(--wp--custom--typography--font-size--heading-1)"
+        }
+      }
+    }
+  },
+  "customTemplates": {},
+  "templateParts": {},
+  "patterns": []
+}
