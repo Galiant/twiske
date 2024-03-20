@@ -3,8 +3,8 @@
   "version": 2,
   "settings": {
     "layout": {
-      "contentSize": "1183px",
-      "wideSize": "1183px"
+      "contentSize": "72rem",
+      "wideSize": "72rem"
     },
     "color": {
       "palette": [
@@ -204,7 +204,18 @@
       }
     }
   },
+  "templateParts": [
+    {
+      "name": "header",
+      "area": "header",
+      "title": "Header"
+    },
+    {
+      "name": "footer",
+      "area": "footer",
+      "title": "Footer"
+    }
+  ],
   "customTemplates": {},
-  "templateParts": {},
   "patterns": []
 }
