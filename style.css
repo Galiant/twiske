@@ -62,13 +62,14 @@ Use it to make something cool, have fun, and share what you've learned with othe
   margin-bottom: var(--wp--preset--spacing--20);
 }
 
+.category_sidebar > li:hover {
+  background-color: var(--wp--preset--color--twiske-yellow);
+  border: 1px solid var(--wp--preset--color--twiske-yellow);
+}
+
 .category_sidebar > li > a {
   color: var(--wp--preset--color--twiske-black);
   text-decoration: none;
-}
-
-.category_sidebar > li:hover {
-  background-color: var(--wp--preset--color--twiske-yellow);
 }
 
 /*--------------------------
@@ -76,9 +77,39 @@ Use it to make something cool, have fun, and share what you've learned with othe
 ----------------------------*/
 
 .single-article-title {
-  font-size: var(--wp--preset--spacing--70);
+  font-size: var(--wp--preset--spacing--80);
+  font-family: var(--wp--preset--font-family--noto);
+  font-weight: normal;
+}
+
+.single-article-category-name > a:hover {
+  background-color: var(--wp--preset--color--twiske-yellow);
+  text-decoration: none;
+}
+
+.single-article-tags > a:hover {
+  background-color: var(--wp--preset--color--twiske-yellow);
+  text-decoration: none;
+}
+
+.single-article-latest-posts-title {
+  font-family: var(--wp--preset--font-family--noto);
+}
+
+.single-article-latest-posts > li > a {
+  text-decoration: none;
+  border-bottom: 2px solid var(--wp--preset--color--twiske-yellow);
 }
 
 .single-article-latest-posts > li > a:hover {
+  background-color: var(--wp--preset--color--twiske-yellow);
+}
+
+.comment-form > p > input#submit {
+  border: 2px solid var(--wp--preset--color--twiske-black);
+}
+
+.comment-form > p > input#submit:hover {
+  border: 2px solid var(--wp--preset--color--twiske-yellow);
   background-color: var(--wp--preset--color--twiske-yellow);
 }

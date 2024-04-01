@@ -68,6 +68,19 @@
               "src": ["file:./assets/fonts/Chivo/Chivo-Bold.ttf"]
             }
           ]
+        },
+        {
+          "fontFamily": "'NotoSerif', serif",
+          "slug": "noto",
+          "name": "Heading - NotoSerif",
+          "fontFace": [
+            {
+              "fontFamily": "'NotoSerif', serif",
+              "fontWeight": "400",
+              "fontStyle": "bold",
+              "src": ["file:./assets/fonts/NotoSerif/NotoSerif-Medium.ttf"]
+            }
+          ]
         }
       ],
       "fontSizes": [
