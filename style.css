@@ -47,6 +47,19 @@ Use it to make something cool, have fun, and share what you've learned with othe
 /*--------------------------
         SIDEBAR
 ----------------------------*/
+.wp-block-search__input {
+  border: 2px solid var(--wp--preset--color--twiske-black);
+}
+
+.wp-block-search__input:focus {
+  border: 2px solid var(--wp--preset--color--twiske-yellow);
+  outline: none;
+}
+
+.wp-block-search__button:hover {
+  background-color: var(--wp--preset--color--twiske-yellow) !important;
+}
+
 .category_sidebar {
   list-style-type: none;
   display: flex;
@@ -57,14 +70,14 @@ Use it to make something cool, have fun, and share what you've learned with othe
 .category_sidebar > li {
   color: var(--wp--preset--color--twiske-black);
   padding: var(--wp--preset--spacing--20);
-  border: 1px solid var(--wp--preset--color--twiske-black);
+  border: 2px solid var(--wp--preset--color--twiske-black);
   margin-right: var(--wp--preset--spacing--20);
   margin-bottom: var(--wp--preset--spacing--20);
 }
 
 .category_sidebar > li:hover {
   background-color: var(--wp--preset--color--twiske-yellow);
-  border: 1px solid var(--wp--preset--color--twiske-yellow);
+  border: 2px solid var(--wp--preset--color--twiske-yellow);
 }
 
 .category_sidebar > li > a {
@@ -105,6 +118,33 @@ Use it to make something cool, have fun, and share what you've learned with othe
   background-color: var(--wp--preset--color--twiske-yellow);
 }
 
+.comment-reply-title {
+  font-family: var(--wp--preset--font-family--noto);
+  font-size: var(--wp--custom--typography--font-size--heading-2);
+}
+
+.comment-form > p > textarea {
+  border: 2px solid var(--wp--preset--color--twiske-black);
+}
+
+.comment-form > p > textarea:focus {
+  border: 2px solid var(--wp--preset--color--twiske-yellow);
+  outline: none;
+}
+
+input#author,
+input#email,
+input#url {
+  border: 2px solid var(--wp--preset--color--twiske-black);
+}
+
+input#author:focus,
+input#email:focus,
+input#url:focus {
+  border: 2px solid var(--wp--preset--color--twiske-yellow);
+  outline: none;
+}
+
 .comment-form > p > input#submit {
   border: 2px solid var(--wp--preset--color--twiske-black);
 }
@@ -112,4 +152,26 @@ Use it to make something cool, have fun, and share what you've learned with othe
 .comment-form > p > input#submit:hover {
   border: 2px solid var(--wp--preset--color--twiske-yellow);
   background-color: var(--wp--preset--color--twiske-yellow);
+}
+
+/*--------------------------
+          CONTACT
+----------------------------*/
+.wpforms-field-medium:focus {
+  border: 2px solid var(--wp--preset--color--twiske-yellow) !important;
+}
+
+.wpforms-field-medium > div > input:focus {
+  border: 2px solid var(--wp--preset--color--twiske-yellow) !important;
+}
+
+.wpforms-submit {
+  border: 2px solid var(--wp--preset--color--twiske-black) !important;
+  box-shadow: none !important;
+}
+
+.wpforms-submit:hover {
+  border: 2px solid var(--wp--preset--color--twiske-yellow) !important;
+  background: var(--wp--preset--color--twiske-yellow) !important;
+  box-shadow: none !important;
 }
