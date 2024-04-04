@@ -17,6 +17,20 @@ Use it to make something cool, have fun, and share what you've learned with othe
 */
 
 /*--------------------------
+        GENERAL
+----------------------------*/
+
+.wp-site-blocks {
+  min-height: calc(100vh - 2rem);
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  margin-top: auto;
+}
+
+/*--------------------------
         BLOG PAGE
 ----------------------------*/
 .entry-content {
