@@ -1,16 +1,40 @@
-<!-- wp:group {"style":{"elements":{"link":{"color":{"text":"var:preset|color|twiske-white"}}}},"backgroundColor":"twiske-black","textColor":"twiske-white","layout":{"type":"constrained"}} -->
+<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","right":"var:preset|spacing|30","bottom":"var:preset|spacing|60","left":"var:preset|spacing|30"},"margin":{"top":"0","bottom":"0"}},"elements":{"link":{"color":{"text":"var:preset|color|twiske-white"}}}},"backgroundColor":"twiske-black","textColor":"twiske-white","className":"has-background-color","layout":{"type":"constrained","contentSize":""}} -->
 <div
-  class="wp-block-group has-twiske-white-color has-twiske-black-background-color has-text-color has-background has-link-color"
+  class="wp-block-group alignfull has-background-color has-twiske-white-color has-twiske-black-background-color has-text-color has-background has-link-color"
+  style="
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: var(--wp--preset--spacing--60);
+    padding-right: var(--wp--preset--spacing--30);
+    padding-bottom: var(--wp--preset--spacing--60);
+    padding-left: var(--wp--preset--spacing--30);
+  "
 >
-  <!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between"}} -->
-  <div class="wp-block-group">
-    <!-- wp:paragraph -->
-    <p>Copyright © Antonijo Galic. All Rights Reserved.</p>
+  <!-- wp:group {"align":"wide","layout":{"type":"flex","justifyContent":"space-between","flexWrap":"wrap"},"fontSize":"large"} -->
+  <div class="wp-block-group alignwide has-large-font-size">
+    <!-- wp:paragraph {"fontSize":"medium"} -->
+    <p class="has-medium-font-size">
+      Copyright © Antonijo Galic. All Rights Reserved.
+    </p>
     <!-- /wp:paragraph -->
 
-    <!-- wp:paragraph -->
-    <p>Social Icons Placeholder</p>
-    <!-- /wp:paragraph -->
+    <!-- wp:group {"layout":{"type":"flex"},"fontSize":"regular"} -->
+    <div class="wp-block-group has-regular-font-size">
+      <!-- wp:navigation {"ref":5,"layout":{"type":"flex","setCascadingProperties":true,"justifyContent":"left"},"fontSize":"medium"} /-->
+    </div>
+    <!-- /wp:group -->
+
+    <!-- wp:social-links {"iconColor":"twiske-white","iconColorValue":"#fefefe","openInNewTab":true,"className":"is-style-logos-only"} -->
+    <ul class="wp-block-social-links has-icon-color is-style-logos-only">
+      <!-- wp:social-link {"url":"https://www.linkedin.com/in/antonijogalic/","service":"linkedin"} /-->
+
+      <!-- wp:social-link {"url":"https://github.com/Galiant","service":"github"} /-->
+
+      <!-- wp:social-link {"url":"https://twitter.com/antonijogalic","service":"twitter"} /-->
+
+      <!-- wp:social-link {"url":"mailto:galic.antonijo@gmail.com","service":"mail"} /-->
+    </ul>
+    <!-- /wp:social-links -->
   </div>
   <!-- /wp:group -->
 </div>

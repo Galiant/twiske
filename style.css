@@ -26,8 +26,21 @@ Use it to make something cool, have fun, and share what you've learned with othe
   flex-direction: column;
 }
 
+.wp-block-navigation-link:hover {
+  border-bottom: 2px solid var(--wp--preset--color--twiske-yellow);
+  margin-bottom: -2px;
+}
+
+/*--------------------------
+        FOOTER
+----------------------------*/
+
 footer {
   margin-top: auto;
+}
+
+.wp-block-social-link > a > svg:hover {
+  fill: var(--wp--preset--color--twiske-yellow) !important;
 }
 
 /*--------------------------
