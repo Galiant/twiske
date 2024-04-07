@@ -1,24 +1,33 @@
-<!-- wp:group {"layout":{"type":"constrained"}} -->
-<div class="wp-block-group">
-  <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|30","bottom":"var:preset|spacing|30","left":"var:preset|spacing|30","right":"var:preset|spacing|30"}}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between"}} -->
+<!-- wp:group {"backgroundColor":"twiske-black","layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-twiske-black-background-color has-background">
+  <!-- wp:group {"style":{"spacing":{"padding":{"top":"0","bottom":"0","left":"0","right":"0"}}},"className":"header-block","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between"}} -->
   <div
-    class="wp-block-group"
-    style="
-      padding-top: var(--wp--preset--spacing--30);
-      padding-right: var(--wp--preset--spacing--30);
-      padding-bottom: var(--wp--preset--spacing--30);
-      padding-left: var(--wp--preset--spacing--30);
-    "
+    class="wp-block-group header-block"
+    style="padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0"
   >
-    <!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|twiske-black"}}}},"backgroundColor":"twiske-yellow","textColor":"twiske-black","fontSize":"medium"} -->
-    <p
-      class="has-twiske-black-color has-twiske-yellow-background-color has-text-color has-background has-link-color has-medium-font-size"
-    >
-      <strong>AG</strong>
-    </p>
-    <!-- /wp:paragraph -->
+    <!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+    <div class="wp-block-group">
+      <!-- wp:paragraph {"align":"center","style":{"elements":{"link":{"color":{"text":"var:preset|color|twiske-black"}}},"layout":{"selfStretch":"fit","flexSize":null},"typography":{"letterSpacing":"1px"}},"backgroundColor":"twiske-yellow","textColor":"twiske-black","className":"header-logo-text","fontSize":"extra-large"} -->
+      <p
+        class="has-text-align-center header-logo-text has-twiske-black-color has-twiske-yellow-background-color has-text-color has-background has-link-color has-extra-large-font-size"
+        style="letter-spacing: 1px"
+      >
+        <strong>AG</strong>
+      </p>
+      <!-- /wp:paragraph -->
 
-    <!-- wp:navigation {"ref":5,"layout":{"type":"flex","justifyContent":"left"}} /-->
+      <!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|twiske-white"}}},"typography":{"letterSpacing":"1px"}},"textColor":"twiske-white","className":"header-logo-text-full","fontSize":"extra-large"} -->
+      <p
+        class="header-logo-text-full has-twiske-white-color has-text-color has-link-color has-extra-large-font-size"
+        style="letter-spacing: 1px"
+      >
+        <strong>ANTONIJO GALIC</strong>
+      </p>
+      <!-- /wp:paragraph -->
+    </div>
+    <!-- /wp:group -->
+
+    <!-- wp:navigation {"ref":5,"textColor":"twiske-white","layout":{"type":"flex","justifyContent":"left"},"fontSize":"regular"} /-->
   </div>
   <!-- /wp:group -->
 </div>
