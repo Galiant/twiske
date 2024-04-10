@@ -22,6 +22,16 @@ add_action( 'wp_enqueue_scripts', 'twiske_styles' );
 /*-------------------------------------------------------------
 Enqueue Scripts
 --------------------------------------------------------------*/
+function twiske_theme_jquery() {
+	wp_enqueue_script(
+        'twiske-theme-jquery', 
+        'https://code.jquery.com/jquery-3.7.1.min.js', 
+        array(), 
+        null, 
+        true
+    );
+}
+add_action('wp_enqueue_scripts', 'twiske_theme_jquery');
 
 function twiske_theme_particles() {
 	wp_enqueue_script( 
@@ -44,3 +54,14 @@ function twiske_theme_app_particles() {
 	);
 }
 add_action( 'wp_enqueue_scripts', 'twiske_theme_app_particles' );
+
+function twiske_theme_fit_text() {
+	wp_enqueue_script( 
+		'twiske-theme-fit-text',
+		get_parent_theme_file_uri( '/assets/js/fitText.js' ),
+		array('jquery'),
+		wp_get_theme()->get( 'Version' ),
+		true
+	);
+}
+add_action( 'wp_enqueue_scripts', 'twiske_theme_fit_text' );
