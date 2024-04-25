@@ -104,6 +104,14 @@ body.home {
   letter-spacing: 0.5rem;
 }
 
+.typed-text {
+  z-index: 1;
+  color: var(--wp--preset--color--twiske-white);
+  position: absolute;
+  top: 60%;
+  font-size: 2rem;
+}
+
 /*--------------------------
         FOOTER
 ----------------------------*/

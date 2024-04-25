@@ -65,3 +65,25 @@ function twiske_theme_fit_text() {
 	);
 }
 add_action( 'wp_enqueue_scripts', 'twiske_theme_fit_text' );
+
+function twiske_theme_typed() {
+	wp_enqueue_script( 
+		'twiske-theme-typed',
+		get_parent_theme_file_uri( '/assets/js/typed.js' ),
+		array(),
+		wp_get_theme()->get( 'Version' ),
+		true
+	);
+}
+add_action( 'wp_enqueue_scripts', 'twiske_theme_typed' );
+
+function twiske_theme_typed_text() {
+	wp_enqueue_script( 
+		'twiske-theme-typed_text',
+		get_parent_theme_file_uri( '/assets/js/typedText.js' ),
+		array('jquery'),
+		wp_get_theme()->get( 'Version' ),
+		true
+	);
+}
+add_action( 'wp_enqueue_scripts', 'twiske_theme_typed_text' );
