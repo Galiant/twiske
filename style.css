@@ -26,6 +26,15 @@ Use it to make something cool, have fun, and share what you've learned with othe
   flex-direction: column;
 }
 
+.wp-block-navigation__responsive-container {
+  background-color: var(--wp--preset--color--twiske-black) !important;
+  padding: 0 20px !important;
+}
+
+.wp-block-navigation__responsive-container-close {
+  padding-top: 20px;
+}
+
 /*--------------------------
         HEADER
 ----------------------------*/
